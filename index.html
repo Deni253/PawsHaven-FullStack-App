@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="mystyle.css?v=1">
+    <title>Paws Haven</title>
+    <script src="/Current_User.js"></script>
+    <script src="/Logout.js"></script>
+</head>
+<body>
+    <header class="d-flex justify-content-between align-items-center container-fluid" style="padding: 0;">
+        <div class="d-flex align-items-center"> 
+            <!--naslov pobjegne u novi red ako nemam šapu i njega u jednom divu i flex-->
+            <img src="/assets/paw.jpg" alt="" style="width: 140px; height: 130px;">
+            <h1 style="font-size: 4rem; color: black; margin-left: 20px;">Paws Haven</h1>
+        </div>
+        <div id="user-info" style="min-width: 250px;"></div>
+        <div class="dropdown" style="padding: 10px;">
+            <button type="button" class="btn dropdown-toggle" data-bs-toggle="dropdown" style="background-color: #b9936c; color: white;">
+                Account
+            </button>
+            <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="/Login.html">Log in</a></li>
+                <li><a class="dropdown-item" href="/Register.html">Register</a></li>
+                <hr class="display-4">
+                <li><a class="dropdown-item" href="/GetAdoptionHistory.html">View History</a></li>
+                <li><a class="dropdown-item" href="/Put_up_for_adoption.html">Upload Dog</a></li>
+                <li><a class="dropdown-item" id="log-out" href="/index.html">Logout</a></li>
+            </ul>
+        </div>
+    </header>
+
+    <nav class="container" style="margin-top: 30px;">
+        <div class="row" style="padding: 0; border: 4px solid #b9936c; border-radius: 20px;color: black;">
+            <a href="/Dogs.html" class="nav-link col-md-4" style="text-align: center; padding: 0; font-size: 30px;">Dogs</a>
+            <a href="/AboutUs.html" class="nav-link col-md-4" style="text-align: center; padding: 0; font-size: 30px;">About us</a>
+            <a href="/Contact.html" class="nav-link col-md-4" style="text-align: center; padding: 0; font-size: 30px;">Contact</a>
+        </div>
+    </nav>
+
+    <div class="mt-4 p-5 text-white rounded" style="margin-left: 35px; margin-right: 35px; margin-top: 200px; background-color: #dac292;text-align: start;">
+        <h1>Dogs=Happiness</h1>
+        <p>Don't wait, adopt your furry friend today!!!</p>
+    </div>
+
+    <div class="row dogs-n-text" style="margin-left: 35px; margin-right: 35px; background-color: #e6e2d3;">
+        <article class="website-info col-md-6" style="text-align: center; background-color: #dac292; border-radius: 20px;border:3px solid #703112">
+            <h3>🐾 Welcome to Paws Haven Dog Shelter! 🐾</h3>
+            <p>
+                Discover your new best friend at Paws Haven, where we provide loving care for our dogs and transparent medical records to ensure they find the perfect home. 
+                Our mission is to encourage responsible pet ownership—knowing each dog’s needs helps you make an informed choice. Visit us today and adopt a furry companion, 
+                but only if you’re ready for the lifelong commitment. Because at Paws Haven, dogs equal happiness! 🐶🤎
+            </p>
+        </article>
+
+        <div id="Dog-carousel" class="carousel slide col-md-6" data-bs-ride="carousel" data-bs-interval="4000">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img class="d-block w-100 carousel-image" src="/assets/dog1.png" alt="First slide">
+                </div>
+                <div class="carousel-item">
+                    <img class="d-block w-100 carousel-image" src="/assets/dog2.jpg" alt="Second slide">
+                </div>
+                <div class="carousel-item">
+                    <img class="d-block w-100 carousel-image" src="/assets/dog3.png" alt="Third slide">
+                </div>
+                <div class="carousel-item">
+                    <img class="d-block w-100 carousel-image" src="/assets/dog4.png" alt="Fourth slide">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer class="text-white rounded">
+        <p>Denz 2025-All rights reserved</p>
+    </footer>
+</body>
+</html>

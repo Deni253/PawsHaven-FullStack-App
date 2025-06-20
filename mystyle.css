@@ -1,0 +1,126 @@
+.nav-link {
+    color: black;
+    display: block;
+    padding: 10px 0;
+}
+
+.nav-link:hover {
+    color: white;
+    background-color: #b9936c;
+    transition: all 0.3s ease;
+}
+
+.row a:first-child {
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+}
+
+.row a:last-child {
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
+
+.dropdown {
+    float: inline-end;
+}
+
+.dogs-n-text {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.website-info {
+    max-width: 400px;
+    height: 400px;
+    margin: 30px auto;
+    overflow: hidden;
+    position: relative;
+    margin-top: 170px;
+}
+
+#Dog-carousel {
+    max-width: 400px;
+    height: 700px; 
+    margin: 30px auto;
+    overflow: hidden;
+    position: relative;
+    margin-top: 30px;
+}
+
+
+#Dog-carousel .carousel-inner,
+#Dog-carousel .carousel-item {
+    width: 100%;
+    height: 100%;
+}
+
+.carousel-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; 
+}
+
+
+footer {
+    text-align: center;
+    border-radius: 10px;
+    font-size: 25px;
+    margin: 0 35px; 
+    height: 70px;
+    font-weight: 900;
+    background-color: #c4b7a6;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+footer p {
+    margin: 0;
+    line-height: 1;
+}
+
+
+footer::before {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+#dogImage {
+ 
+    animation-name: slide-l;
+    animation-duration: 1.5s;
+    overflow: hidden;
+}
+
+#specificDog {
+
+    animation-name: slide-r;
+    animation-duration: 1.5s;
+}
+
+@keyframes slide-l {
+    0%   {transform: translate(-2000px);}
+    100% {transform: translate(0px);}
+}
+
+@keyframes slide-r {
+    0%   {transform: translate(2000px);}
+    100% {transform: translate(0px);}
+}
+
+#filter{
+    position: absolute; 
+    left: 2rem;
+    top: 26.8rem;
+}
+
+
+@media (max-width: 767px) {
+    .website-info {
+        margin-bottom: 30px;
+    }
+    #Dog-carousel {
+        margin-top: 30px;
+    }
+}
